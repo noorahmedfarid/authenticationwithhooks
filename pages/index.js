@@ -5,6 +5,7 @@ import ls from "local-storage";
 const Index = ({ user, isServer }) => {
   const isBrowser = typeof window !== "undefined";
 
+   //this is a test command for test
   // this means running on first page load and inside the browser so should store in local storage
   if (isServer && isBrowser) {
     ls.set("userInfo", user);
